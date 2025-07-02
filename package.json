@@ -1,0 +1,27 @@
+{
+  "name": "@teo-garcia/prettier-config-shared",
+  "version": "0.2.1",
+  "description": "Shared Prettier configuration for fullstack web templates",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "keywords": [
+    "prettier",
+    "prettierconfig",
+    "formatting",
+    "shared",
+    "typescript",
+    "react",
+    "node"
+  ],
+  "author": "teo-garcia",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  }
+}
