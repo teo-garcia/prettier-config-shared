@@ -1,20 +1,16 @@
 # @teo-garcia/prettier-config-shared
 
-Shared Prettier configuration used across the fullstack web templates.
+Shared Prettier configuration for consistent code formatting across projects.
 
-## Install
+## Installation
 
-```sh
-# with pnpm
-pnpm add -D @teo-garcia/prettier-config-shared prettier
-
-# or with npm
-npm add -D @teo-garcia/prettier-config-shared prettier
+```bash
+npm install --save-dev @teo-garcia/prettier-config-shared prettier
 ```
 
 ## Usage
 
-### Option 1: Package.json (Recommended)
+### Package.json (Recommended)
 
 ```json
 {
@@ -22,43 +18,36 @@ npm add -D @teo-garcia/prettier-config-shared prettier
 }
 ```
 
-### Option 2: Configuration file
+### Configuration File
 
-```js
+```javascript
 // prettier.config.js
-import sharedConfig from "@teo-garcia/prettier-config-shared";
+import sharedConfig from '@teo-garcia/prettier-config-shared'
 
-export default sharedConfig;
+export default sharedConfig
 ```
 
-### Option 3: Extend and override
+### Extend and Override
 
-```js
+```javascript
 // prettier.config.js
-import sharedConfig from "@teo-garcia/prettier-config-shared";
+import sharedConfig from '@teo-garcia/prettier-config-shared'
 
 export default {
   ...sharedConfig,
-  // Your project-specific overrides
-  printWidth: 100,
-};
+  printWidth: 100
+}
 ```
 
 ## Configuration
 
-This config includes:
-
-- **Core rules**: Semi-colons disabled, single quotes, 2-space tabs, ES5 trailing commas
-- **JSX rules**: Single quotes for JSX attributes
+- **Core rules**: No semi-colons, single quotes, 2-space tabs, ES5 trailing commas
+- **JSX**: Single quotes for JSX attributes
 - **Markdown**: Always wrap prose, 80 character width
 - **Prisma**: Proper formatting for `.prisma` files
 - **YAML**: No single quotes, 2-space indentation
 - **JSON**: No trailing commas, 2-space indentation
 
----
+## License
 
-### Notes
-
-- Compatible with Prettier 3.x
-- Designed to work seamlessly with `@teo-garcia/eslint-config-shared`
-- All file type overrides are included for consistent formatting across the monorepo
+MIT
