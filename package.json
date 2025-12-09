@@ -1,6 +1,6 @@
 {
   "name": "@teo-garcia/prettier-config-shared",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Shared Prettier configuration for fullstack web templates",
   "type": "module",
   "main": "index.js",
