@@ -23,7 +23,7 @@
     "url": "git+https://github.com/teo-garcia/prettier-config-shared.git"
   },
   "engines": {
-    "node": ">=20.11"
+    "node": ">=24"
   },
   "peerDependencies": {
     "prettier": "^3.0.0"
