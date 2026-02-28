@@ -1,6 +1,6 @@
 {
   "name": "@teo-garcia/prettier-config-shared",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Shared Prettier configuration for fullstack web templates",
   "type": "module",
   "main": "index.js",
@@ -18,6 +18,10 @@
   ],
   "author": "teo-garcia",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teo-garcia/prettier-config-shared.git"
+  },
   "engines": {
     "node": ">=20.11"
   },
