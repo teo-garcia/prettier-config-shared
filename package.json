@@ -22,6 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/teo-garcia/prettier-config-shared.git"
   },
+  "packageManager": "pnpm@10.2.0",
   "engines": {
     "node": ">=24"
   },
