@@ -16,16 +16,17 @@ Part of the [@teo-garcia/templates](https://github.com/teo-garcia/templates) eco
 
 ## Features
 
-| Setting | Value |
-|---------|-------|
-| **Semicolons** | No |
-| **Quotes** | Single |
-| **Tab Width** | 2 spaces |
-| **Trailing Commas** | ES5 |
-| **JSX Quotes** | Single |
-| **Print Width** | 80 |
+| Setting             | Value    |
+| ------------------- | -------- |
+| **Semicolons**      | No       |
+| **Quotes**          | Single   |
+| **Tab Width**       | 2 spaces |
+| **Trailing Commas** | ES5      |
+| **JSX Quotes**      | Single   |
+| **Print Width**     | 80       |
 
 **File-specific rules:**
+
 - Markdown: Always wrap prose
 - Prisma: Proper `.prisma` file formatting
 - YAML: No single quotes, 2-space indent
@@ -77,11 +78,11 @@ export default {
 
 ## Related Packages
 
-| Package | Description |
-|---------|-------------|
-| [@teo-garcia/eslint-config-shared](https://github.com/teo-garcia/eslint-config-shared) | ESLint rules |
-| [@teo-garcia/tsconfig-shared](https://github.com/teo-garcia/tsconfig-shared) | TypeScript settings |
-| [@teo-garcia/vitest-config-shared](https://github.com/teo-garcia/vitest-config-shared) | Test configuration |
+| Package                                                                                | Description         |
+| -------------------------------------------------------------------------------------- | ------------------- |
+| [@teo-garcia/eslint-config-shared](https://github.com/teo-garcia/eslint-config-shared) | ESLint rules        |
+| [@teo-garcia/tsconfig-shared](https://github.com/teo-garcia/tsconfig-shared)           | TypeScript settings |
+| [@teo-garcia/vitest-config-shared](https://github.com/teo-garcia/vitest-config-shared) | Test configuration  |
 
 ## License
 

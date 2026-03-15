@@ -3,7 +3,7 @@ const config = {
   semi: false,
   singleQuote: true,
   tabWidth: 2,
-  trailingComma: "es5",
+  trailingComma: 'es5',
   printWidth: 80,
   useTabs: false,
 
@@ -15,27 +15,27 @@ const config = {
   // Other languages
   overrides: [
     {
-      files: "*.md",
+      files: '*.md',
       options: {
-        proseWrap: "always",
+        proseWrap: 'always',
         printWidth: 80,
       },
     },
     {
-      files: "*.{yml,yaml}",
+      files: '*.{yml,yaml}',
       options: {
         tabWidth: 2,
         singleQuote: false,
       },
     },
     {
-      files: "*.json",
+      files: '*.json',
       options: {
         tabWidth: 2,
-        trailingComma: "none",
+        trailingComma: 'none',
       },
     },
   ],
-};
+}
 
-export default config;
+export default config

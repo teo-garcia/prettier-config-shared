@@ -30,7 +30,11 @@
     "prettier": "^3.0.0"
   },
   "scripts": {
+    "check": "pnpm format:check",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.8.1"
   }
 }
