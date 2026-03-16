@@ -8,7 +8,8 @@
 [![npm](https://img.shields.io/npm/v/@teo-garcia/prettier-config-shared?color=blue)](https://www.npmjs.com/package/@teo-garcia/prettier-config-shared)
 [![Prettier](https://img.shields.io/badge/Prettier-3-F7B93E?logo=prettier&logoColor=black)](https://prettier.io)
 
-Part of the [@teo-garcia/templates](https://github.com/teo-garcia/templates) ecosystem
+Part of the [@teo-garcia/templates](https://github.com/teo-garcia/templates)
+ecosystem
 
 </div>
 
