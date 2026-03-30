@@ -15,7 +15,7 @@ ecosystem
 
 ---
 
-## Features
+## Settings
 
 | Setting             | Value    |
 | ------------------- | -------- |
@@ -26,64 +26,28 @@ ecosystem
 | **JSX Quotes**      | Single   |
 | **Print Width**     | 80       |
 
-**File-specific rules:**
+File-specific overrides: Markdown always wraps prose, Prisma files use proper
+formatting, YAML uses no single quotes with 2-space indent, JSON has no trailing
+commas.
 
-- Markdown: Always wrap prose
-- Prisma: Proper `.prisma` file formatting
-- YAML: No single quotes, 2-space indent
-- JSON: No trailing commas
+---
 
 ## Requirements
 
-- Node.js 20+
+- Node.js 24+
 - Prettier 3+
 
-## Quick Start
-
-```bash
-# Install the package
-pnpm add -D @teo-garcia/prettier-config-shared prettier
-```
-
-### Package.json (Recommended)
-
-```json
-{
-  "prettier": "@teo-garcia/prettier-config-shared"
-}
-```
-
-### Configuration File
-
-```javascript
-// prettier.config.js
-import sharedConfig from '@teo-garcia/prettier-config-shared'
-
-export default sharedConfig
-```
-
-## Extending
-
-Override settings as needed:
-
-```javascript
-// prettier.config.js
-import sharedConfig from '@teo-garcia/prettier-config-shared'
-
-export default {
-  ...sharedConfig,
-  printWidth: 100,
-  semi: true,
-}
-```
+---
 
 ## Related Packages
 
-| Package                                                                                | Description         |
-| -------------------------------------------------------------------------------------- | ------------------- |
-| [@teo-garcia/eslint-config-shared](https://github.com/teo-garcia/eslint-config-shared) | ESLint rules        |
-| [@teo-garcia/tsconfig-shared](https://github.com/teo-garcia/tsconfig-shared)           | TypeScript settings |
-| [@teo-garcia/vitest-config-shared](https://github.com/teo-garcia/vitest-config-shared) | Test configuration  |
+| Package                            | Description         |
+| ---------------------------------- | ------------------- |
+| `@teo-garcia/eslint-config-shared` | ESLint rules        |
+| `@teo-garcia/tsconfig-shared`      | TypeScript settings |
+| `@teo-garcia/vitest-config-shared` | Test configuration  |
+
+---
 
 ## License
 
