@@ -26,9 +26,8 @@ ecosystem
 | **JSX Quotes**      | Single   |
 | **Print Width**     | 80       |
 
-File-specific overrides: Markdown always wraps prose, Prisma files use proper
-formatting, YAML uses no single quotes with 2-space indent, JSON has no trailing
-commas.
+File-specific overrides: Markdown always wraps prose, YAML uses no single quotes
+with 2-space indent, and JSON has no trailing commas.
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "name": "@teo-garcia/prettier-config-shared",
-  "version": "0.2.9",
+  "version": "0.2.10",
   "description": "Shared Prettier configuration for fullstack web templates",
   "type": "module",
   "main": "index.js",
@@ -31,10 +31,11 @@
     "prettier": "^3.0.0"
   },
   "scripts": {
-    "check": "pnpm format:check",
+    "check": "pnpm format:check && pnpm smoke:consumer",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "smoke:consumer": "node scripts/consumer-smoke.mjs"
   },
   "devDependencies": {
     "@teo-garcia/prettier-config-shared": "^0.2.9",
