@@ -4,6 +4,7 @@ import {
   mkdirSync,
   readFileSync,
   readdirSync,
+  rmSync,
   writeFileSync,
 } from 'node:fs'
 import { tmpdir } from 'node:os'
@@ -21,6 +22,10 @@ const tempRoot = mkdtempSync(path.join(tmpdir(), 'teo-prettier-consumer-'))
 const tarballDir = path.join(tempRoot, 'tarballs')
 const consumerDir = path.join(tempRoot, 'consumer')
 
+process.on('exit', () => {
+  rmSync(tempRoot, { force: true, recursive: true })
+})
+
 mkdirSync(tarballDir)
 mkdirSync(consumerDir)
 
@@ -35,6 +40,28 @@ const tarballName = readdirSync(tarballDir).find((file) =>
 
 if (!tarballName) {
   throw new Error('pnpm pack did not create a tarball')
+}
+
+const tarballFiles = execFileSync(
+  'tar',
+  ['-tzf', path.join(tarballDir, tarballName)],
+  { cwd: packageRoot }
+)
+  .toString('utf8')
+  .trim()
+  .split('\n')
+  .sort()
+const expectedTarballFiles = [
+  'package/LICENSE',
+  'package/README.md',
+  'package/index.js',
+  'package/package.json',
+].sort()
+
+if (JSON.stringify(tarballFiles) !== JSON.stringify(expectedTarballFiles)) {
+  throw new Error(
+    `Unexpected packed files:\n${tarballFiles.map((file) => `- ${file}`).join('\n')}`
+  )
 }
 
 writeFileSync(
